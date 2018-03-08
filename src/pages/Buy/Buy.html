@@ -1,0 +1,71 @@
+<div class="flex flex-center page-padding">
+  <div class="col-7">
+    <div class="row mb-5">
+      <div class="col-3 mr-10">
+          <span class="label fs-14">Date & Time</span>
+      </div>
+      <div class="col-8 br-1 pl-5">
+        <q-datetime
+          v-model="datetimemdl"
+          type="datetime"
+          hide-underline
+        ></q-datetime>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-3 mr-10">
+        <span class="label fs-14">Exchange</span>
+      </div>
+      <div class="col-8 br-1 pl-5">
+        <q-select
+          type="list"
+          v-model="exchange"
+          :options="exchanges"
+          hide-underline
+        ></q-select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-3 mr-10"></div>
+      <div class="col-4 mr-5">
+        <span class="label fs-10">Buy</span>
+      </div>
+      <div class="col-4">
+        <span class="label fs-10">Sell</span>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-3 mr-10">
+        <span class="label fs-14">Trading Pair</span>
+      </div>
+      <div class="col-4 br-1 mr-5">
+        <q-select
+          type="list"
+          v-model="buyUnit"
+          :options="buyUnits"
+          hide-underline
+        ></q-select>
+      </div>
+      <div class="col-4 br-1">
+        <q-select
+          type="list"
+          v-model="sellUnit"
+          :options="sellUnits"
+          hide-underline
+        ></q-select>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-3 mr-10">
+        <span class="label fs-14">Amount</span>
+      </div>
+      <div class="col-4 br-1 mr-5">
+          <input v-model="amount">
+      </div>
+      <div class="col-4">
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+  </div>
+</div>

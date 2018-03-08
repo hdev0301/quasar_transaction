@@ -1,0 +1,8 @@
+<q-tabs
+  color="primary"
+  :inverted="$q.theme === 'ios'"
+  :style="$q.theme === 'ios' ? { background: 'rgba(255,255,255,0.95' } : null"
+>
+  <q-tab slot="title" name="recent" label="Recent Transactions" />
+  <q-tab slot="title" name="exchange" label="Exchange Import" />
+</q-tabs>

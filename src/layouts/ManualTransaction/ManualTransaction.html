@@ -1,0 +1,12 @@
+<q-layout>
+  <q-layout-header>
+    <manual-transaction-tabs />
+  </q-layout-header>
+  <q-page-container>
+    <div class="transaction-form">
+      <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" mode="out-in">
+        <router-view />
+      </transition>
+    </div>
+  </q-page-container>
+</q-layout>

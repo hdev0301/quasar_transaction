@@ -1,0 +1,16 @@
+<q-tabs
+  color="primary"
+  :inverted="$q.theme === 'ios'"
+  :style="$q.theme === 'ios' ? { background: 'rgba(255,255,255,0.95' } : null"
+>
+  
+  <q-tab slot="title" name="buy" label="Buy" />
+  <q-tab slot="title" name="sell" label="Sell" />
+
+  <q-tab-pane name="buy">
+    <buy />
+  </q-tab-pane>
+  <q-tab-pane name="sell">
+    SELL
+  </q-tab-pane>
+</q-tabs>
